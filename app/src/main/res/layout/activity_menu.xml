@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.kevinmouga.gsb_n2f.Menu_Activity">
+
+
+    <LinearLayout
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:id="@+id/topLayout"
+        android:layout_width="420dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/imageView3"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:layout_width="65dp"
+            android:layout_height="30dp"
+            app:srcCompat="@mipmap/trait"
+            android:id="@+id/imageView4"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="2dp" />
+
+        <TextView
+            android:text="Menu"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:id="@+id/textView8"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:fontFamily="arial"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            app:srcCompat="@mipmap/trait"
+            android:id="@+id/imageView5"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="2dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="430dp"
+        android:layout_below="@+id/topLayout"
+        android:layout_alignParentStart="true"
+        android:id="@+id/bloc_center">
+
+        <Button
+            android:textColor="#ffff"
+            android:background="@drawable/rounded_edittext"
+            android:text="Frais au forfait"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/frais_au_forfait" />
+
+        <Button
+
+            android:textColor="#ffff"
+            android:background="@drawable/rounded_edittext"
+            android:layout_marginTop="25dp"
+            android:text="Frais hors forfait"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/frais_hors_forfait" />
+
+        <Button
+            android:textColor="#ffff"
+            android:background="@drawable/rounded_edittext"
+            android:layout_marginTop="25dp"
+            android:text="Synthèse du mois"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/synthese" />
+
+        <Button
+            android:textColor="#ffff"
+            android:background="@drawable/rounded_edittext"
+            android:layout_marginTop="25dp"
+            android:text="Paramètres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/parametres" />
+
+    </LinearLayout>
+
+    <TextView
+        android:gravity="center"
+        android:layout_below="@+id/bloc_center"
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/footer"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:text="Rights reserved Copyright 2016   BTS SIO SLAM"
+        android:textColor="@android:color/white"/>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:srcCompat="@mipmap/logoo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

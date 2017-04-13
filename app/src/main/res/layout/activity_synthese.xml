@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_synthese"
+    android:paddingBottom="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.kevinmouga.gsb_n2f.Synthese_Activity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+
+        <LinearLayout
+            android:paddingLeft="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:id="@+id/imageView3"
+                android:layout_width="116dp"
+                android:layout_height="120dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                app:srcCompat="@mipmap/logoo" />
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="62dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="2dp"
+                    app:srcCompat="@mipmap/trait" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:fontFamily="arial"
+                    android:gravity="center"
+                    android:text="Synthese"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="58dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="2dp"
+                    app:srcCompat="@mipmap/trait" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginRight="20dp"
+                android:layout_gravity="end"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Spinner
+                    android:layout_gravity="end"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinnerMois"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <TableLayout
+                android:visibility="gone"
+                android:id="@+id/tablleSyntheseFAF"
+                android:layout_width="310dp"
+                android:layout_gravity="center"
+                android:layout_height="match_parent">
+
+                <TableRow
+
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/button_blue"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:textColor="#ffff"
+                        android:layout_marginRight="10dp"
+                        android:textSize="20dp"
+                        android:text="Frais au forfait"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/faf" />
+
+                </TableRow>
+
+
+                <TableLayout
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/layoutFAF"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TableRow
+
+                        android:layout_below="@+id/middleLayout"
+                        android:visibility="visible"
+                        android:id="@+id/layouTitre"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <TextView
+                            android:padding="10dp"
+                            android:text="Prestation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView10"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_marginLeft="40dp"
+                            android:padding="10dp"
+                            android:layout_alignParentRight="true"
+                            android:text="Quantité"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView" />
+                    </TableRow>
+                </TableLayout>
+
+
+            </TableLayout>
+
+            <TableLayout
+                android:visibility="gone"
+                android:id="@+id/tablleSyntheseFHF"
+                android:layout_width="310dp"
+                android:layout_gravity="center"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/button_blue"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:textColor="#ffff"
+                        android:layout_marginRight="10dp"
+                        android:textSize="20dp"
+                        android:text="Frais hors forfait"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/fhf" />
+
+                </TableRow>
+
+
+                <TableLayout
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/layoutFHF"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TableRow
+
+                        android:layout_below="@+id/middleLayout"
+                        android:visibility="visible"
+                        android:id="@+id/layouTitreFHF"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <TextView
+                            android:padding="10dp"
+                            android:text="Libelle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_marginLeft="40dp"
+                            android:padding="10dp"
+                            android:layout_alignParentRight="true"
+                            android:text="date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_marginLeft="40dp"
+                            android:padding="10dp"
+                            android:layout_alignParentRight="true"
+                            android:text="montant"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </TableRow>
+
+
+                </TableLayout>
+
+
+            </TableLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

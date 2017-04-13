@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_profils"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.kevinmouga.gsb_n2f.Profils_Activity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+
+            <ImageView
+                android:layout_gravity="center"
+                android:id="@+id/imageView3"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                app:srcCompat="@mipmap/logoo" />
+
+            <LinearLayout
+
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:id="@+id/topLayout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/imageView3"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@mipmap/trait"
+                    android:id="@+id/imageView4"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:text="Profils"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView8"
+                    android:layout_weight="1"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:fontFamily="serif"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@mipmap/trait"
+                    android:id="@+id/imageView5"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+
+            <TableLayout
+                android:paddingTop="5dp"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:id="@+id/bloc_center"
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:layout_below="@+id/topLayout"
+                android:layout_centerHorizontal="true">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="330dp" >
+
+                    <TextView
+                        android:text="Login :"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textLogin" />
+
+                    <EditText
+
+                        android:background="@drawable/champ_white"
+                        android:layout_width="270dp"
+                        android:layout_height="24dp"
+                        android:inputType="textPersonName"
+                        android:text=""
+                        android:ems="10"
+                        android:visibility="visible"
+                        android:id="@+id/login" />
+
+                    <TextView
+                        android:visibility="gone"
+                        android:text="TextView"
+                        android:layout_width="270dp"
+                        android:layout_height="24dp"
+                        android:id="@+id/textViewLogin" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="330dp" >
+
+                    <TextView
+                        android:text="Nom :"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textNom" />
+                    <EditText
+                        android:visibility="visible"
+                        android:background="#ffffff"
+                        android:layout_width="270dp"
+                        android:layout_height="24dp"
+                        android:inputType="textPersonName"
+                        android:ems="10"
+                        android:id="@+id/nom" />
+
+
+
+                    <TextView
+                        android:visibility="gone"
+                        android:text="TextView"
+                        android:layout_width="270dp"
+                        android:layout_height="24dp"
+                        android:id="@+id/textViewnom" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginTop="15dp"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="330dp" >
+
+                    <TextView
+                        android:text="Prénom :"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textPrenom" />
+
+                    <EditText
+                        android:visibility="visible"
+                        android:background="#ffffff"
+                        android:layout_width="270dp"
+                        android:layout_height="24dp"
+                        android:inputType="textPersonName"
+                        android:ems="10"
+                        android:id="@+id/prenom" />
+
+                    <TextView
+                        android:visibility="gone"
+                        android:text="TextView"
+                        android:layout_width="270dp"
+                        android:layout_height="24dp"
+                        android:id="@+id/textViewPrenom" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="330dp" >
+
+                    <TextView
+                        android:text="Adresse :"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textadresse" />
+
+                    <EditText
+                        android:visibility="visible"
+                        android:background="#ffffff"
+                        android:layout_width="270dp"
+                        android:layout_height="24dp"
+                        android:inputType="textPersonName"
+                        android:ems="10"
+                        android:id="@+id/adresse" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:text="Ville :"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textVille" />
+
+                    <EditText
+                        android:visibility="visible"
+                        android:background="#ffffff"
+                        android:layout_width="270dp"
+                        android:layout_height="24dp"
+                        android:inputType="textPersonName"
+                        android:ems="10"
+                        android:id="@+id/ville" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:text="Email :"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textCp" />
+
+                    <EditText
+                        android:background="#ffffff"
+                        android:layout_width="270dp"
+                        android:layout_height="24dp"
+                        android:inputType="textPersonName"
+                        android:ems="10"
+                        android:id="@+id/email" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:text="Mot de passe :"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textMdp" />
+
+                    <EditText
+                        android:background="#ffffff"
+                        android:layout_width="270dp"
+                        android:layout_height="24dp"
+                        android:inputType="textPersonName"
+                        android:ems="10"
+                        android:id="@+id/mdp" />
+                </TableRow>
+            </TableLayout>
+
+            <Button
+                android:onClick="sendData"
+                android:layout_marginBottom="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="35dp"
+                android:layout_below="@id/bloc_center"
+                android:text="VALIDER"
+                android:layout_width="110dp"
+                android:layout_height="30dp"
+                android:textColor="@android:color/white"
+                android:background="@drawable/button_blue"
+                android:layout_gravity="end"
+                android:id="@+id/button4" />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

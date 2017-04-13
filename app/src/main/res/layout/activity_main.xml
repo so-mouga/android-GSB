@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.kevinmouga.gsb_n2f.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@mipmap/logoo" />
+
+    <LinearLayout
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:id="@+id/topLayout"
+        android:layout_width="420dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/imageView3"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            app:srcCompat="@mipmap/trait"
+            android:id="@+id/imageView4"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="2dp" />
+
+        <TextView
+            android:text="Authentification"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:id="@+id/textView8"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:fontFamily="arial"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            app:srcCompat="@mipmap/trait"
+            android:id="@+id/imageView5"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="2dp" />
+    </LinearLayout>
+
+    <TextView
+        android:text="Copyright - GSB - 2017"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView2"
+        android:background="#333333"
+        android:textAlignment="center"
+        android:layout_alignParentBottom="true"
+        android:textColor="@android:color/white" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:weightSum="1"
+        android:layout_marginTop="59dp"
+        android:layout_below="@+id/topLayout"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:textSize="14dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textUser" />
+
+        <TextView
+            android:text="Mot de passe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/password"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:background="#ffffff"
+            android:textAlignment="center" />
+
+        <Button
+            android:onClick="btmdp"
+            android:text="Connexion"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:id="@+id/btValider"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.04"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:background="@drawable/button_blue" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
